@@ -1,11 +1,11 @@
-Active Search
+##Active Search
 ***
 
-Overview:
+##Overview:
 ***
   Adds a simple search class method to every class that inherits from ActiveRecord::Base.
   
-Usage:
+##Usage:
 ***
 
 ##Setup
@@ -17,7 +17,7 @@ in your controller
     Blog.search('tims blog') #=> <Blog#Instance>
 
 
-##customization
+##Customization
 you can specify columns to ignore with the config block
 
     class Blog < ActiveRecord::Base
