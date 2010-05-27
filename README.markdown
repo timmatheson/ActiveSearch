@@ -5,14 +5,11 @@
 ***
   Adds a simple search class method to every class that inherits from ActiveRecord::Base.
   
-##Usage:
-***
-
 ##Setup
 config/environment.rb
     config.gem 'active_search'
 
-    
+##Usage:  
 in your controller
     Blog.search('tims blog') #=> <Blog#Instance>
 
