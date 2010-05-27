@@ -8,16 +8,18 @@ Overview:
 Usage:
 ***
 
-    #config/environment.rb
+##Setup
+config/environment.rb
     config.gem 'active_search'
 
     
-    #in your controller
+in your controller
     Blog.search('tims blog') #=> <Blog#Instance>
 
 
-    #customization
-    # you can specify columns to ignore with the config block
+##customization
+you can specify columns to ignore with the config block
+
     class Blog < ActiveRecord::Base
       active_search_config do |config|
         config.active_search_exclude_columns = [:id, :url]
