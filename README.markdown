@@ -8,24 +8,24 @@ Overview:
 Usage:
 ***
 
-    <code>
-    #config/environment.rb
-    config.gem 'active_search'
-    </code>
+<code>
+  #config/environment.rb
+  config.gem 'active_search'
+</code>
     
-    <code>
-      #in your controller
+<code>
+  #in your controller
 
-      Blog.search('tims blog') #=> <Blog#Instance>
-    </code>
+  Blog.search('tims blog') #=> <Blog#Instance>
+</code>
 
-    <code>  
-    #customization
-    # you can specify columns to ignore with the config block
+<code>  
+  #customization
+  # you can specify columns to ignore with the config block
 
-    class Blog < ActiveRecord::Base
-      active_search_config do |config|
-        config.active_search_exclude_columns = [:id, :url]
-      end
+  class Blog < ActiveRecord::Base
+    active_search_config do |config|
+      config.active_search_exclude_columns = [:id, :url]
     end
-    </code>
+  end
+</code>
