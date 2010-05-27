@@ -9,7 +9,7 @@
 config/environment.rb
     config.gem 'active_search'
 
-##Usage:  
+##Usage  
 in your controller
     Blog.search('tims blog') #=> <Blog#Instance>
 
