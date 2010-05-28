@@ -8,15 +8,16 @@
   Adds a simple search class method to every class that inherits from ActiveRecord::Base.
   
 ##Setup:
-config/environment.rb
+    # config/environment.rb
     config.gem 'active_search'
 
-##Usage: 
-in your controller
+##Examples: 
+    # Simple search for a store with a zipcode of 92688
     Store.search('92688') #=> [<#Store id: 1, zipcode: '92688'>,<#Store id: 2, zipcode: '92688'>]
 
 ##Customization:
-you can specify columns to ignore with the config block
+    # You can specify columns to ignore with the config block
+    # All columns will be excluded from searching
 
     class Blog < ActiveRecord::Base
       active_search_config do |config|
